@@ -1,5 +1,7 @@
 # Jupyter Notebook Moss Checker
 
+Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/20230420_running_moss_plagiarism_checker/) about `Run MOSS Plagiarism Checker on Jupyter Notebooks`. I decided to use the script to automate moss-checker on multiple repos.
+
 ## Setup
 
 - register MOSS ([reference](https://theory.stanford.edu/~aiken/moss/))
