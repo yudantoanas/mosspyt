@@ -14,7 +14,7 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
 
     **note**: the last bit in italics is your email address.
 - after receive reply from MOSS, proceed to copy the script from the email and save it to `moss.pl` file
-- copy and/or rename some files (remove `-example` suffix) file, example:
+- copy and/or rename some files (remove `-example` suffix), example:
 
     ```text
     organization-example.txt -> organization.txt
