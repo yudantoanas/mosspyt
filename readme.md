@@ -26,7 +26,7 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
 
 ## Setup
 
-- Clone the repo
+- Clone the repo, and add new `outputs` and `sources` directories
 
 - Register MOSS account ([reference](https://theory.stanford.edu/~aiken/moss/))
 
