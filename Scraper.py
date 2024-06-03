@@ -6,17 +6,16 @@ import time
 from git import Repo, GitCommandError
 
 
-def scraper():
+def scraper(rdpPort, assignmentUrl, repoUrl):
     # Set up ChromeOptions and connect to the existing browser
     c_options = Options()
-    c_options.add_experimental_option("debuggerAddress", 'localhost:8989')
+    c_options.add_experimental_option("debuggerAddress", f'localhost:{rdpPort}')
 
     # Initialize the WebDriver with the existing Chrome instance
     driver = webdriver.Chrome(options=c_options)
 
     # Now, you can interact with the already opened Chrome browser
-    driver.get(
-        'https://classroom.github.com/classrooms/131152740-ftds-017-hck/assignments/p0-ftds017-hck-g2')
+    driver.get(assignmentUrl)
     html = driver.page_source
     page = BeautifulSoup(html, "html.parser")
 
@@ -31,8 +30,7 @@ def scraper():
         username = usernameElement.find("span").get_text().strip()
 
         # generate repo url
-        url = f"https://github.com/FTDS-assignment-bay/p0-ftds017-hck-g2-{
-            username}"
+        url = f"{repoUrl}-{username}"
 
         # clone repo using GitPython
         try:
