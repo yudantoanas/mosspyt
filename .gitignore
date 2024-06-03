@@ -1,7 +1,5 @@
-*Prefix.txt
-organization.txt
-usernames.txt
 moss.pl
 
+__pycache__
 outputs/*.py
-sources/*/
+sources/*
