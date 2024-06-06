@@ -22,7 +22,11 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=8989 --user-data-dir=~/chrome-rdp <https://classroom.github.com/classrooms>
     ```
 
-- When first launch Chrome RDP, usually chrome will ask to sync with your existing google account or not, opt for `continue without an account`
+- When first launch Chrome RDP, opt for `don't sign in` or `continue without an account`.
+    ![alt text](image5.png)
+
+- Make sure to have github classroom logged in upon launch Chrome.
+    ![alt text](image4.png)
 
 ## Setup
 
@@ -38,7 +42,7 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
     ```
 
     **note**: change `username@domain` to your email.
-- After receive reply from MOSS, proceed to copy the script from the email and save it to `moss.pl` file 
+- After receive reply from MOSS, proceed to copy the script from the email and save it to `moss.pl` file
 
     > The email should appear like this
     ![alt text](image1.png)
@@ -59,8 +63,26 @@ Execute the `run.sh` file in the terminal:
 ./run.sh
 ```
 
->Ouput Example:
+After running the script, it will ask for some input, such as:
+
+- Port Number: `<current_chrome_rdp_port>`
+- Classroom Assignment URL: `<assignment_url>`
+- Repo Prefix URL: `<repo_prefix_url>`
+
+    ```text
+    Example:
+    students repo URL
+    https://github.com/FTDS-assignment-bay/p0-ftds017-hck-g1-Ayslove
+    
+    so the prefix will be
+    https://github.com/FTDS-assignment-bay/p0-ftds017-hck-g1
+    ```
+
+- Select file format: `<file_format>` or leave blank for `.ipynb` file
+
+Ouput Example:
 ![alt text](image2.png)
+![alt text](image6.png)
 
 ## References
 
