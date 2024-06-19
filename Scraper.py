@@ -55,7 +55,7 @@ def scraper(rdpPort, assignmentUrl, repoUrl):
         # loop through file list and select only .ipynb file
         for fileElement in fileElements:
             file = fileElement.get_text()
-            if ".ipynb" in file:
+            if ".ipynb" in file or ".py" in file:
                 # store file path
                 paths.append(f"sources/{username}/{file}")
                 continue

@@ -5,8 +5,8 @@ import shutil
 
 def scriptExtractor(filePaths: list):
     for path in filePaths:
-        shutil.copyfile(f'./{path.split('/')[1]}', f'./outputs/{path.split('/')[1]}')
-        print(f'Extracted user code to ./outputs/{path.split('/')[1]}')
+        shutil.copyfile(f'./{path}', f'./outputs/{path.split('/')[2]}')
+        print(f'Extracted user code to ./outputs/{path.split('/')[2]}')
 
 def notebookExtractor(filePaths: list):
     for path in filePaths:
