@@ -23,10 +23,10 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
     ```
 
 - When first launch Chrome RDP, opt for `don't sign in` or `continue without an account`.
-    ![alt text](image5.png)
+    ![alt text](docs/image5.png)
 
 - Make sure to have github classroom logged in upon launch Chrome.
-    ![alt text](image4.png)
+    ![alt text](docs/image4.png)
 
 ## Setup
 
@@ -45,7 +45,7 @@ Big thanks to Park Ye-Joo who writes an [article](https://park.is/blog_posts/202
 - After receive reply from MOSS, proceed to copy the script from the email and save it to `moss.pl` file
 
     > The email should appear like this
-    ![alt text](image1.png)
+    ![alt text](docs/image1.png)
 
 - Set permission on `moss.pl` using `chmod ug+x <file>`
 
@@ -81,8 +81,8 @@ After running the script, it will ask for some input, such as:
 - Select file format: `<file_format>` or leave blank for `.ipynb` file
 
 Ouput Example:
-![alt text](image2.png)
-![alt text](image6.png)
+![alt text](docs/image2.png)
+![alt text](docs/image6.png)
 
 ## References
 

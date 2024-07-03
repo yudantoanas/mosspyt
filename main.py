@@ -1,5 +1,5 @@
 from Scraper import scraper
-from Extractor import notebookExtractor, scriptExtractor
+from Extractor import notebookExtractor, filesCopier
 
 if __name__ == "__main__":
     data = scraper(
@@ -10,6 +10,6 @@ if __name__ == "__main__":
 
     args = input("Select file format: (default is ipynb) ")
     if args.lower() == "py":
-        scriptExtractor(data)
+        filesCopier(data)
     else:
         notebookExtractor(data)
