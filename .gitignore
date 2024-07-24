@@ -1,5 +1,5 @@
 moss.pl
 
 __pycache__
-outputs/*
-sources/*
+data/outputs/*
+data/sources/*

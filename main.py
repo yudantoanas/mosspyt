@@ -1,9 +1,13 @@
-from Scraper import scraper
-from Extractor import notebookExtractor, filesCopier
+from utils import Scraper, filesCopier, notebookExtractor
 
 if __name__ == "__main__":
-    data = scraper(
-        input("Port Number: "),
+    scraper = Scraper(
+        input("RDP Host: "),
+        input("RDP Port: "),
+        input("Local Directory: "),
+    )
+
+    data = scraper.play(
         input("Classroom Assignment URL: "),
         input("Github Repository Prefix: ")
     )
