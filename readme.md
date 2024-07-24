@@ -1,6 +1,6 @@
 # MossPyt
 
-A productivity tool that can do plagiarism check using Moss for all python assignment in github classroom. To run MossPyt, you must have Chrome installed and launch Chrome with Remote Debugging Port enabled. The reason why I use this approach is because, with RDP enabled, Chrome will store the login session of our GitHub Classroom account so that whenever we run this tool again it will automatically access the student assignments without having to re-authenticate.
+A productivity tool that can do plagiarism check using Moss for all python assignment in github classroom.
 
 ## Requirements
 - Chrome browser with RDP enabled
