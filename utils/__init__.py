@@ -1,3 +1,3 @@
-from utils.scraper import Scraper
-from utils.extractor import notebookExtractor
-from utils.files import filesCopier
+from utils.scraper import scrape
+from utils.extractor import notebook_extractor
+from utils.files import files_copier

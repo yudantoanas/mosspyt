@@ -1,5 +1,5 @@
-moss.pl
+.idea
 
 __pycache__
-data/outputs/*
-data/sources/*
+moss.pl
+.env

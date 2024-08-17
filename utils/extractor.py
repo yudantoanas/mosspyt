@@ -1,15 +1,17 @@
-from pathlib import Path
 import os
-import nbformat
 import pathlib
 
-def notebookExtractor(fileNames: list, sourceDir: str, outputDir: str):
-    for fileName in fileNames:
+import nbformat
+
+
+def notebook_extractor(data: dict):
+    for file_name in data['paths']:
         try:
             # read notebook file
-            nb = nbformat.read(f"{sourceDir}/{fileName}", as_version=4)
+            nb = nbformat.read(f"clone/{file_name}", as_version=4)
         except Exception as e:
-            raise Exception(e)
+            print(e)
+            continue
 
         # extract code from cell
         user_code = ''
@@ -21,11 +23,11 @@ def notebookExtractor(fileNames: list, sourceDir: str, outputDir: str):
 
         # generate output file
         output_path = os.path.join(
-            outputDir,  # folder name in current directory
-            f"{pathlib.Path(fileName).stem}.py" # extract filename from extension
-        )   
+            "moss",  # folder name in current directory
+            f"{pathlib.Path(file_name).stem}.py"  # extract filename from extension
+        )
 
         with open(output_path, mode='w', encoding='utf-8') as f:
             f.write(user_code)
-    
+
     return None
