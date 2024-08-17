@@ -38,7 +38,13 @@ A productivity tool that can do plagiarism check using Moss for all python assig
   ```bash
   ./run.sh
   ```
-- Demo: https://youtu.be/x5LIh90blKs
+- Demo:
+  
+
+https://github.com/user-attachments/assets/a81c7935-4a7c-4c38-b661-011ffbf3d852
+
+https://youtu.be/x5LIh90blKs
+  
 - Ouput Example:
   ![alt text](docs/image2.png)
   ![alt text](docs/image6.png)
